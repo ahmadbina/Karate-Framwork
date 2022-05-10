@@ -1,0 +1,207 @@
+17:23:35.068 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:23:35.713 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:23:36.173 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tekschool-api-test.azurewebsites.net/api/v1/product/86
+1 > Authorization: Basic dGVrc2Nob29sOmFkbWlu
+1 > Host: tekschool-api-test.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_291)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:23:37.005 [main] DEBUG com.intuit.karate - response time in milliseconds: 827
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Date: Tue, 01 Feb 2022 22:23:36 GMT
+1 < Set-Cookie: JSESSIONID=D9D7324F3883823146969759F22419C2; Domain=tekschool-api-test.azurewebsites.net; Secure
+{"id":86,"productName":"string","category":{"id":1,"categoryName":"SDET-A","new":false},"basePrice":0.0,"new":false}
+17:23:37.010 [main] INFO  com.intuit.karate - [print] {
+  "id": 86,
+  "productName": "string",
+  "category": {
+    "id": 1,
+    "categoryName": "SDET-A",
+    "new": false
+  },
+  "basePrice": 0.0,
+  "new": false
+}
+ 
+17:23:37.012 [main] INFO  com.intuit.karate - [print] created id is:  86 
+21:16:56.252 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:16:56.300 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1643768216282
+21:17:07.447 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:17:09.753 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tekschool-api-test.azurewebsites.net/api/v1/prroduct/save
+1 > Authorization: Basic dGVrc2Nob29sOmFkbWlu
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: tekschool-api-test.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"id":123,"categoryName":"Kabul","new":true}
+
+21:17:11.465 [main] DEBUG com.intuit.karate - response time in milliseconds: 1691
+1 < 404
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json
+1 < Expires: 0
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Date: Wed, 02 Feb 2022 02:17:12 GMT
+1 < Set-Cookie: JSESSIONID=9E0752C2DC660BFA2B6C52137B2E572F; Domain=tekschool-api-test.azurewebsites.net; Secure
+{"timestamp":"2022-02-02T02:17:12.885+00:00","status":404,"error":"Not Found","path":"/api/v1/prroduct/save"}
+21:17:11.474 [main] ERROR com.intuit.karate - src/test/java/phoenix/api/Create-Category.feature:17
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 1691, url: https://tekschool-api-test.azurewebsites.net/api/v1/prroduct/save, response: 
+{"timestamp":"2022-02-02T02:17:12.885+00:00","status":404,"error":"Not Found","path":"/api/v1/prroduct/save"}
+src/test/java/phoenix/api/Create-Category.feature:17
+21:17:14.318 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/phoenix/api/Create-Category.feature
+21:22:33.396 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:22:33.445 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1643768553431
+21:22:44.253 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:22:46.519 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tekschool-api-test.azurewebsites.net/api/v1/prroduct/save
+1 > Authorization: Basic dGVrc2Nob29sOmFkbWlu
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: tekschool-api-test.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"id":123,"categoryName":"Kabul","new":true}
+
+21:22:48.573 [main] DEBUG com.intuit.karate - response time in milliseconds: 2037
+1 < 404
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json
+1 < Expires: 0
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Date: Wed, 02 Feb 2022 02:22:49 GMT
+1 < Set-Cookie: JSESSIONID=7D5AEDB0A6AF9D95B89EACC9076F9EB8; Domain=tekschool-api-test.azurewebsites.net; Secure
+{"timestamp":"2022-02-02T02:22:50.031+00:00","status":404,"error":"Not Found","path":"/api/v1/prroduct/save"}
+21:22:48.582 [main] ERROR com.intuit.karate - src/test/java/phoenix/api/Create-Category.feature:17
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 2037, url: https://tekschool-api-test.azurewebsites.net/api/v1/prroduct/save, response: 
+{"timestamp":"2022-02-02T02:22:50.031+00:00","status":404,"error":"Not Found","path":"/api/v1/prroduct/save"}
+src/test/java/phoenix/api/Create-Category.feature:17
+21:22:50.873 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/phoenix/api/Create-Category.feature
+21:26:39.674 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:26:39.697 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1643768799691
+21:26:54.892 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:27:00.675 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tekschool-api-test.azurewebsites.net/api/v1/prroduct/save
+1 > Authorization: Basic dGVrc2Nob29sOmFkbWlu
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: tekschool-api-test.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"categoryName":"Demo Category in Class","new":true}
+
+21:27:04.204 [main] DEBUG com.intuit.karate - response time in milliseconds: 3465
+1 < 404
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json
+1 < Expires: 0
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Date: Wed, 02 Feb 2022 02:27:05 GMT
+1 < Set-Cookie: JSESSIONID=8B262592AE957EA76AE88BDC32F9471D; Domain=tekschool-api-test.azurewebsites.net; Secure
+{"timestamp":"2022-02-02T02:27:05.534+00:00","status":404,"error":"Not Found","path":"/api/v1/prroduct/save"}
+21:27:04.233 [main] ERROR com.intuit.karate - src/test/java/phoenix/api/Create-Category.feature:16
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 3465, url: https://tekschool-api-test.azurewebsites.net/api/v1/prroduct/save, response: 
+{"timestamp":"2022-02-02T02:27:05.534+00:00","status":404,"error":"Not Found","path":"/api/v1/prroduct/save"}
+src/test/java/phoenix/api/Create-Category.feature:16
+21:27:09.381 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/phoenix/api/Create-Category.feature
+21:30:16.664 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:30:16.685 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1643769016680
+21:30:24.824 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:30:27.501 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tekschool-api-test.azurewebsites.net/api/v1/category/save
+1 > Authorization: Basic dGVrc2Nob29sOmFkbWlu
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: tekschool-api-test.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"categoryName":"Demo Category in Class","new":true}
+
+21:30:29.036 [main] DEBUG com.intuit.karate - response time in milliseconds: 1488
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Content-Length: 17
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Date: Wed, 02 Feb 2022 02:30:29 GMT
+1 < Set-Cookie: JSESSIONID=34568897815717F05B2950130FC150D0; Domain=tekschool-api-test.azurewebsites.net; Secure
+Saved with Id  94
+21:30:29.065 [main] INFO  com.intuit.karate - [print] Saved with Id  94 
+21:30:29.120 [main] INFO  com.intuit.karate - [print] null 
+21:30:29.163 [main] INFO  com.intuit.karate - [print] Saved with Id  94 
+21:30:32.618 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/phoenix/api/Create-Category.feature
+21:31:45.765 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:31:45.786 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1643769105779
+21:31:51.754 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:31:54.160 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tekschool-api-test.azurewebsites.net/api/v1/category/save
+1 > Authorization: Basic dGVrc2Nob29sOmFkbWlu
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: tekschool-api-test.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"categoryName":"Tamim Code is Running?","new":true}
+
+21:31:55.599 [main] DEBUG com.intuit.karate - response time in milliseconds: 1414
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Content-Length: 17
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Date: Wed, 02 Feb 2022 02:31:56 GMT
+1 < Set-Cookie: JSESSIONID=7C6B0D74E36D058727CF64FC78052B10; Domain=tekschool-api-test.azurewebsites.net; Secure
+Saved with Id  99
+21:31:55.634 [main] INFO  com.intuit.karate - [print] Saved with Id  99 
+21:31:55.667 [main] INFO  com.intuit.karate - [print] null 
+21:31:55.676 [main] INFO  com.intuit.karate - [print] Saved with Id  99 
+21:31:58.377 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/phoenix/api/Create-Category.feature
